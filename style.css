@@ -337,27 +337,17 @@ footer {
     }
 
     body {
-        margin: 0;
-        padding: 0;
         --font_size_medium: 3vw;
         --font_size_small: 2.8vw;
     }
 
     main {
-        padding: 0 3vw;
         width: auto;
     }   
 
     h1 {
         text-align: center;
         font-size: 14vw;
-        margin: 0;
-    }
-
-    nav {
-        gap: 1vw;
-        margin-bottom: 8vh;
-        margin-top: 6vh;
     }
 
     nav a {
@@ -378,14 +368,12 @@ footer {
 
     h2 {
         font-size: 7vw;
-        margin-top: 0;
     }
 
     h3 {
         font-size: 3.5vw;
     }
 
- 
     /* Bottom Section */
     .bottom-section {
         grid-template-columns: repeat(3, 33%);
@@ -394,7 +382,6 @@ footer {
 
     .bottom-section p {
         font-size: 2.8vw;
-        padding: 0 1vw;
     }
 
     #section-one .bottom-section div:first-child {
@@ -441,10 +428,6 @@ footer {
     #section-two .bottom-section div:nth-child(3) p,
     #section-one .bottom-section div:nth-child(4) p {
         font-size: 3vw;
-    }
-
-    #section-two {
-        margin-bottom: 10vh;
     }
 
     footer {
