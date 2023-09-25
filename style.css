@@ -18,6 +18,10 @@ body {
     margin: 5rem 0;
     --font_size_medium: 1rem;
     --font_size_small: 0.9rem;
+    --pointTopLeft: 0 20px 20px 20px;
+    --pointTopRight: 20px 0 20px 20px;
+    --pointBottomLeft: 20px 20px 0 20px;
+    --pointBottomRight: 20px 20px 20px 0;
 }
 
 /* Background */
@@ -252,7 +256,7 @@ article p {
 }
 
 #section-one .bottom-section div:nth-child(4) {
-    background: url(../images/chas-chandler.jpg);
+    background: url(./Images/chas-chandler.jpg);
     background-size: cover;
     grid-column: 5;
     border-radius: 0 20px 20px 20px;
@@ -299,7 +303,7 @@ article p {
 }
 
 #section-two .bottom-section div:nth-child(3) {
-    background: url(../images/studio.jpg);
+    background: url(../Images/studio.jpg);
     background-size: cover;
     background-position: top;
     grid-column: 4 / span 2;
@@ -332,7 +336,7 @@ footer {
 @media (max-width: 500px) {
     
     body > div {
-        background: url(../images/background-phone.webp);
+        background: url(../Images/background-phone.webp);
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
