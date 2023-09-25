@@ -499,3 +499,39 @@ footer {
         --font_size_small: 0.65rem;
         }
 }
+
+@media (min-width:900px) and (max-width: 1200px) {
+    h1 {
+        font-size: 6.6vw;
+    }
+
+    h2 {
+        font-size: 2.53vw;
+    }
+
+    h3 {
+        font-size: 1.85vw;
+    }
+
+    nav a {
+        font-size: 1.85vw;
+    }
+
+    body {
+    --font_size_medium: 1.34vw;
+    --font_size_small: 1.21vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 998.4px;
+        box-sizing: border-box;
+    }
+
+    .right-section {
+        grid-template-columns: 11.4rem 11.4rem;
+        grid-template-rows: 11.4rem 11.4rem 12rem;
+        gap: 0.5rem;
+    }
+}
