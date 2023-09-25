@@ -15,9 +15,9 @@ html {
 
 body {
     box-sizing: border-box;
-    margin: 5rem 0;
-    --font_size_medium: 1rem;
-    --font_size_small: 0.9rem;
+    margin: 4rem 0;
+    --font_size_medium: 0.9rem;
+    --font_size_small: 0.8rem;
     --pointTopLeft: 0 20px 20px 20px;
     --pointTopRight: 20px 0 20px 20px;
     --pointBottomLeft: 20px 20px 0 20px;
@@ -58,7 +58,7 @@ h1 {
     font-family: "Bungee-Shade";
     font-weight: bold;
     font-size: 4.95rem;
-    margin: 0 0 4rem 0;
+    margin: 0 0 2.5rem 0;
     padding-top: 1rem;
     line-height: 1.2;
 }
@@ -67,7 +67,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 nav a {
@@ -144,17 +144,15 @@ ul li {
 
 article p {
     font-size: var(--font_size_medium);
-    margin: 5rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 /* Right Section / Album Cover */
 .right-section {
     display: grid;
     grid-template-columns: 15vw 15vw;
-    grid-template-rows: 15vw 15vw 15vw;
-    justify-content: center;
+    grid-template-rows: 15vw 15vw auto;
     gap: 0.5rem;
-    flex-basis: 30rem;
 }
 
 #section-one .album, 
@@ -193,8 +191,6 @@ article p {
 
 #section-one .right-section div:nth-child(2),
 #section-two .right-section div:nth-child(2) {
-    grid-column: 1;
-    grid-row: 3;
     border-radius: 0 0 0 20px;
     font-size: var(--font_size_small);
     overflow: hidden;
@@ -214,8 +210,6 @@ article p {
 
 #section-one .right-section div:nth-child(3),
 #section-two .right-section div:nth-child(3) {
-    grid-column: 2;
-    grid-row: 3;
     border-radius: 0 0 20px 0;
     font-size: var(--font_size_small);
     overflow: hidden;
@@ -395,8 +389,7 @@ footer {
     /* Bottom Section */
     .bottom-section {
         grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 25vh 25vh;
-        gap: 1vh;
+        gap: 1vw;
     }
 
     .bottom-section p {
@@ -407,50 +400,42 @@ footer {
     #section-one .bottom-section div:first-child {
         grid-column: 1;
         grid-row: 1;
-        height: 100%;
     }
     
     #section-one .bottom-section div:nth-child(3) {
         grid-column: 2 / 4;
         grid-row: 1;
-        height: 100%;
     }
     
     #section-one .bottom-section div:nth-child(4) {
         grid-column: 2 / 3;
         grid-row: 2;
-        height: 100%;
     }
     
     #section-one .bottom-section div:nth-child(5) {
         grid-column: 3;
         grid-row: 2;
-        height: 100%;
      }
 
      /* Section Two - Bottom Section */
      #section-two .bottom-section div:first-child {
         grid-column: 1 / 3;
         grid-row: 1;
-        height: 100%;
     }
     
     #section-two .bottom-section div:nth-child(2) {
         grid-column: 3;
         grid-row: 1;
-        height: 100%;
     }
     
     #section-two .bottom-section div:nth-child(3) {
         grid-column: 1 / span 2;
         grid-row: 2;
-        height: 100%;
     }
     
     #section-two .bottom-section div:nth-child(4){
         grid-column: 3;
         grid-row: 2;
-        height: 100%;
     }
 
     #section-two .bottom-section div:nth-child(3) p,
@@ -521,7 +506,7 @@ footer {
 
     .right-section {
         grid-template-columns: 11.4rem 11.4rem;
-        grid-template-rows: 11.4rem 11.4rem 12rem;
+        grid-template-rows: 11.4rem 11.4rem auto;
         gap: 0.5rem;
     }
 }
