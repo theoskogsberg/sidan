@@ -337,8 +337,8 @@ footer {
     }
 
     body {
-        --font_size_medium: 3vw;
-        --font_size_small: 2.8vw;
+        --font_size_medium: 3.5vw;
+        --font_size_small: 3.2vw;
     }
 
     main {
@@ -347,11 +347,17 @@ footer {
 
     h1 {
         text-align: center;
-        font-size: 14vw;
+        font-size: 16vw;
     }
 
     nav a {
-        font-size: 3.1vw;
+        font-size: 2.7vw;
+        padding: 1rem 0;
+    }
+
+    #section-one,
+    #section-two {
+        justify-content: center;
     }
     
     /* Upper Section */
@@ -359,11 +365,22 @@ footer {
         flex-direction: column-reverse;
     }
 
+    article {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
     .right-section {
-        grid-template-columns:  50% 50%;
-        grid-template-rows: 43vw 43vw 43vw;
+        grid-template-columns:  49% 49%;
+        grid-template-rows: 43vw 43vw auto;
         gap: 1vw;
         grid-row: 1;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .right-section p {
+        font-size: 4.5vw;
     }
 
     h2 {
@@ -371,17 +388,13 @@ footer {
     }
 
     h3 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     /* Bottom Section */
     .bottom-section {
         grid-template-columns: repeat(3, 33%);
         gap: 1vw;
-    }
-
-    .bottom-section p {
-        font-size: 2.8vw;
     }
 
     #section-one .bottom-section div:first-child {
