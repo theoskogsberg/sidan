@@ -109,7 +109,7 @@ article {
 
 h2 {
     font-family: "Bungee-Outline";
-    font-size: 1.9rem;
+    font-size: calc(1.9 * var(--font_size));
     line-height: 1.4;
     margin: 0;
 }
@@ -175,13 +175,11 @@ article p {
 .right-section div:nth-child(2) {
     border-radius: 0 0 0 20px;
     font-size: calc(0.8 * var(--font_size));
-    overflow: hidden;
 }
 
 .right-section div:nth-child(3) {
     border-radius: 0 0 20px 0;
     font-size: calc(0.8 * var(--font_size));
-    overflow: hidden;
 }
 
 #section-one .right-section div:nth-child(2),
