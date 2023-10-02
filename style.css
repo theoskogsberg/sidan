@@ -8,14 +8,7 @@
     src: url(BungeeShade-Regular.ttf);
 }  
 
-html {
-    font-family: helvetica;
-    color: rgb(225, 225, 225);
-}
-
-body {
-    box-sizing: border-box;
-    margin: 4rem 0;
+:root {
     --font_size: 1rem;
     --pointTopLeft: 0 20px 20px 20px;
     --pointTopRight: 20px 0 20px 20px;
@@ -23,10 +16,16 @@ body {
     --pointBottomRight: 20px 20px 20px 0;
 }
 
+body {
+    font-family: helvetica;
+    color: rgb(225, 225, 225);
+    box-sizing: border-box;
+    margin: 4rem 0;
+}
+
 body > div {
     background: url(../Images/background.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
@@ -36,6 +35,7 @@ body > div {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 main {
@@ -117,7 +117,7 @@ h2 {
 h3 {
     margin: 0;
     font-weight: bold;
-    font-size: calc(1.4 * var(--font_size));
+    font-size: calc(1.4* var(--font_size));
 }
 
 ul {
@@ -126,7 +126,7 @@ ul {
 }
 
 ul li {
-    font-size: calc(0.9 * var(--font_size));
+    font-size: calc(0.9* var(--font_size));
 }
 
 article p {
@@ -136,8 +136,8 @@ article p {
 
 .right-section {
     display: grid;
-    grid-template-columns: 15vw 15vw;
-    grid-template-rows: 15vw 15vw auto;
+    grid-template-columns: 17vw 17vw;
+    grid-template-rows: 17vw 17vw auto;
     gap: 0.5rem;
 }
 
@@ -152,7 +152,6 @@ article p {
     border-radius: 20px 20px 0 0;
     opacity: 1;
     transition: opacity 0.7s ease-in-out;
-    height: 100%;
 }
 
 .album img:nth-child(2):hover {
@@ -161,25 +160,25 @@ article p {
 
 .right-section p {
     margin-left: 1rem;
-    font-size: calc(0.9 * var(--font_size));
+    font-size: calc(1 * var(--font_size));
     font-weight: bolder;
     margin-bottom: 0.2rem;
 }
 
 .right-section ol {
-    padding: 0;
+    padding: 0.5rem;
     margin-left: 2rem;
     margin-top: 0;
 }
 
 .right-section div:nth-child(2) {
     border-radius: 0 0 0 20px;
-    font-size: calc(0.8 * var(--font_size));
+    font-size: calc(0.9 * var(--font_size));
 }
 
 .right-section div:nth-child(3) {
     border-radius: 0 0 20px 0;
-    font-size: calc(0.8 * var(--font_size));
+    font-size: calc(0.9 * var(--font_size));
 }
 
 #section-one .right-section div:nth-child(2),
@@ -203,7 +202,7 @@ article p {
 }
 
 .bottom-section p {
-    font-size: calc(0.8 * var(--font_size));
+    font-size: calc(0.9 * var(--font_size));
     margin: 0;
 }
 
@@ -279,8 +278,7 @@ footer {
 }
 
 /* Media Queries */
-
-@media (max-width: 500px) {
+@media (width <= 500px) {
     
     body > div {
         background: url(../Images/background-phone.webp);
@@ -346,7 +344,7 @@ footer {
     }   
 }
 
-@media (min-width:800px) and (max-width: 900px) {
+@media (800px <= width <= 900px) {
     h1 {
         font-size: 3.74rem;
     }
@@ -364,21 +362,21 @@ footer {
     }
 }
 
-@media (min-width:900px) and (max-width: 1200px) {
+@media (900px < width < 1200px) {
     body {
     --font_size: 1.33vw;
     }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
     main {
         width: 998.4px;
         box-sizing: border-box;
     }
 
     .right-section {
-        grid-template-columns: 11.4rem 11.4rem;
-        grid-template-rows: 11.4rem 11.4rem auto;
+        grid-template-columns: 12.6rem 12.6rem;
+        grid-template-rows: 12.6rem 12.6rem auto;
         gap: 0.5rem;
     }
 }
