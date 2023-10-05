@@ -1,12 +1,22 @@
 @font-face {
     font-family: "Bungee-Outline";
-    src: url(BungeeOutline-Regular.ttf);
+    src: url(/fonts/BungeeOutline-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Bungee-Shade" ;
-    src: url(BungeeShade-Regular.ttf);
+    font-family: "Bungee-Shade";
+    src: url(/fonts/BungeeShade-Regular.ttf);
 }  
+
+@font-face {
+    font-family: "Barlow-Condensed";
+    src: url(/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Barlow-Semi-Condensed";
+    src: url(/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+}
 
 :root {
     --font_size: 1rem;
@@ -17,7 +27,7 @@
 }
 
 body {
-    font-family: helvetica;
+    font-family: "Barlow-Semi-Condensed";
     color: rgb(225, 225, 225);
     box-sizing: border-box;
     margin: 4rem 0;
@@ -118,6 +128,7 @@ h3 {
     margin: 0;
     font-weight: bold;
     font-size: calc(1.4* var(--font_size));
+    font-family: "Barlow-Condensed";
 }
 
 ul {
@@ -126,11 +137,11 @@ ul {
 }
 
 ul li {
-    font-size: calc(0.9* var(--font_size));
+    font-size: calc(1* var(--font_size));
 }
 
 article p {
-    font-size: calc(0.9 * var(--font_size));
+    font-size: calc(1 * var(--font_size));
     margin: 3rem 0 0 0;
 }
 
@@ -281,10 +292,7 @@ footer {
 @media (width <= 500px) {
     
     body > div {
-        background: url(../Images/background-phone.webp);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
+        background-image: url(../Images/background-phone.webp);
     }
 
     body {
@@ -345,33 +353,24 @@ footer {
 }
 
 @media (800px <= width <= 900px) {
-    h1 {
-        font-size: 3.74rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1rem;
+    body {
+        --font_size: 0.9rem;
     }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 }
 
 @media (900px < width < 1200px) {
     body {
-    --font_size: 1.33vw;
+    --font_size: 1.5vw;
     }
 }
 
 @media (width >= 1200px) {
     main {
         width: 998.4px;
-        box-sizing: border-box;
     }
 
     .right-section {
