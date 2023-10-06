@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "Barlow-Semi-Condensed";
-    src: url(/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+    src: url(/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
 }
 
 :root {
@@ -120,15 +120,15 @@ article {
 h2 {
     font-family: "Bungee-Outline";
     font-size: calc(1.9 * var(--font_size));
-    line-height: 1.4;
     margin: 0;
+    line-height: 1.4;
 }
 
 h3 {
+    font-family: "Barlow-Condensed";
+    font-size: calc(1.4* var(--font_size));
     margin: 0;
     font-weight: bold;
-    font-size: calc(1.4* var(--font_size));
-    font-family: "Barlow-Condensed";
 }
 
 ul {
