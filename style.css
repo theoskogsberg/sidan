@@ -22,8 +22,8 @@
     --font_size: 1rem;
     --pointTopLeft: 0 20px 20px 20px;
     --pointTopRight: 20px 0 20px 20px;
-    --pointBottomLeft: 20px 20px 0 20px;
-    --pointBottomRight: 20px 20px 20px 0;
+    --pointBottomRight: 20px 20px 0 20px;
+    --pointBottomLeft: 20px 20px 20px 0;
 }
 
 body {
@@ -99,15 +99,16 @@ nav a:nth-child(2) {
     font-weight: bold;
 }
 
-#section-one,
-#section-two {
+section:first-of-type,
+section:last-of-type {
     border-radius: 20px;
     border: 2px solid white;
     padding: 0.7rem;
 }
 
 /* Upper Section */
-.upper {
+section:first-of-type > div:first-child,
+section:last-of-type > div:first-child {
     display: flex;
     gap: 2%;
 }
@@ -145,109 +146,109 @@ article p {
     margin: 3rem 0 0 0;
 }
 
-.right-section {
+article + div {
     display: grid;
     grid-template-columns: 17vw 17vw;
     grid-template-rows: 17vw 17vw auto;
     gap: 0.5rem;
 }
 
-.album {
+article + div > div:first-child {
     position: relative;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
 
-.album img {
+article + div > div:first-child img {
     position: absolute;
     border-radius: 20px 20px 0 0;
     opacity: 1;
     transition: opacity 0.7s ease-in-out;
 }
 
-.album img:nth-child(2):hover {
+article + div > div:first-child img:nth-child(2):hover {
     opacity: 0;
 }
 
-.right-section p {
+article + div p {
     margin-left: 1rem;
     font-size: calc(1 * var(--font_size));
     font-weight: bolder;
     margin-bottom: 0.2rem;
 }
 
-.right-section ol {
+article + div ol {
     padding: 0.5rem;
     margin-left: 2rem;
     margin-top: 0;
 }
 
-.right-section div:nth-child(2) {
+article + div div:nth-child(2) {
     border-radius: 0 0 0 20px;
     font-size: calc(0.9 * var(--font_size));
 }
 
-.right-section div:nth-child(3) {
+article + div div:nth-child(3) {
     border-radius: 0 0 20px 0;
     font-size: calc(0.9 * var(--font_size));
 }
 
-#section-one .right-section div:nth-child(2),
-#section-one .right-section div:nth-child(3) {
+section:first-of-type article + div div:nth-child(2),
+section:first-of-type article + div div:nth-child(3) {
     background-color: rgb(238, 203, 0);
     color: rgb(160, 12, 108);
 }
 
-#section-two .right-section div:nth-child(2),
-#section-two .right-section div:nth-child(3) {
+section:last-of-type article + div div:nth-child(2),
+section:last-of-type article + div div:nth-child(3) {
     background-color: rgb(52, 135, 216);
     color: rgb(255, 255, 165);
 }
 
 /*  Bottom-Section  */
-.bottom-section {
+section > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 0.5rem;
     column-gap: 0.3rem;
 }
 
-.bottom-section p {
+section > div:nth-child(2) p {
     font-size: calc(0.9 * var(--font_size));
     margin: 0;
 }
 
-#section-one .bottom-section div:nth-child(1),
-#section-one .bottom-section div:nth-child(3), 
-#section-one .bottom-section div:nth-child(5)  {
+section:first-of-type > div:nth-child(2) div:nth-child(1),
+section:first-of-type > div:nth-child(2) div:nth-child(3), 
+section:first-of-type > div:nth-child(2) div:nth-child(5)  {
     color: rgb(238, 203, 0);
     background-color: rgb(160, 12, 108); 
 }
 
-.bottom-section div {
+section > div:nth-child(2) div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem;
 }
 
-#section-one .bottom-section div:first-child {
+section:first-of-type > div:nth-child(2) div:first-child {
     border-radius: var(--pointTopRight);
 }
 
-#section-one .bottom-section div:nth-child(3) {
+section:first-of-type > div:nth-child(2) div:nth-child(3) {
     grid-column: 3 / 5;
     border-radius: var(--pointBottomLeft);
 }
 
-#section-one .bottom-section div:nth-child(4) {
+section:first-of-type > div:nth-child(2) div:nth-child(4) {
     background: url(./Images/chas-chandler.jpg);
     background-size: cover;
     color: white;
 }
 
-#section-one .bottom-section div:nth-child(4) ,
-#section-two .bottom-section div:nth-child(3)  {
+section:first-of-type > div:nth-child(2) div:nth-child(4) ,
+section:last-of-type > div:nth-child(2) div:nth-child(3)  {
     color: white;
     border-radius: var(--pointTopLeft);
     display: flex;
@@ -255,26 +256,26 @@ article p {
     padding: 0.6rem 0.6rem;
 }
 
-#section-one .bottom-section div:nth-child(5),
-#section-two .bottom-section div:nth-child(4) {
+section:first-of-type > div:nth-child(2) div:nth-child(5),
+section:last-of-type > div:nth-child(2) div:nth-child(4) {
     border-radius: var(--pointBottomRight);
  }
  
-#section-two .bottom-section div {
+ section:last-of-type > div:nth-child(2) div {
     color: rgb(68, 133, 221);
     background-color: rgb(255, 255, 165); 
 }
 
-#section-two .bottom-section div:first-child {
+section:last-of-type > div:nth-child(2) div:first-child {
     grid-column: 1 / 3;
     border-radius: var(--pointBottomLeft);
 }
 
-#section-two .bottom-section div:nth-child(2) {
+section:last-of-type > div:nth-child(2) div:nth-child(2) {
     border-radius: var(--pointTopLeft);
 }
 
-#section-two .bottom-section div:nth-child(3) {
+section:last-of-type > div:nth-child(2) div:nth-child(3) {
     background: url(../Images/studio.jpg);
     background-size: cover;
     background-position: top;
@@ -314,13 +315,14 @@ footer {
         font-size: 3vw;
     }
 
-    #section-one,
-    #section-two {
+    section:first-of-type,
+    section:last-of-type {
         justify-content: center;
     }
     
     /* Upper Section */
-    .upper {
+    section:first-of-type > div:first-child,
+    section:last-of-type > div:first-child {
         flex-direction: column-reverse;
     }
 
@@ -329,24 +331,29 @@ footer {
         margin: 1rem 0;
     }
 
-    .right-section {
+    article + div {
         grid-template-columns:  1fr 1fr;
         grid-template-rows: 12rem 12rem auto;
         gap: 1vw;
     }
 
     /* Bottom Section */
-    .bottom-section {
+    section > div:nth-child(2) {
         grid-template-columns: repeat(3, 33%);
         gap: 1vw;
     }
-    
-    #section-one .bottom-section div:nth-child(3) {
-        grid-column: 2 / 4;
+
+    section:first-of-type > div:nth-child(2) div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    section:first-of-type > div:nth-child(2) div:nth-child(3) {
+        grid-column: 2 / span 2;
         grid-row: 1;
     }
-    
-     #section-two .bottom-section div:nth-child(3) {
+
+    section:last-of-type > div:nth-child(2) div:nth-child(3) {
         grid-column: 1 / span 2;
         grid-row: 2;
     }   
@@ -373,7 +380,7 @@ footer {
         width: 998.4px;
     }
 
-    .right-section {
+    article + div {
         grid-template-columns: 12.6rem 12.6rem;
         grid-template-rows: 12.6rem 12.6rem auto;
         gap: 0.5rem;
