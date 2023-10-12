@@ -9,7 +9,7 @@
 body {
     font-family: "Barlow-Semi-Condensed";
     color: rgb(225, 225, 225);
-    margin: 4rem 0;
+    margin: 4rem 0; 
 }
 
 body > div {
@@ -182,7 +182,7 @@ section:last-of-type article + div div:nth-child(3) {
     color: rgb(255, 255, 165);
 }
 
-/*  Bottom-Section  */
+/*  Bottom Section  */
 section > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -268,7 +268,6 @@ footer {
 
 /* Media Queries */
 @media (width <= 500px) {
-    
     body > div {
         background-image: url(/Images/background-phone\(1\).jpg);
     }
