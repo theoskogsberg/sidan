@@ -59,7 +59,7 @@ nav a {
     text-decoration: none;
     padding: 1rem 2rem;
     border-radius: 10px;
-    font-size: calc(1.4 * var(--font_size));
+    font-size: calc(1.6 * var(--font_size));
     text-align: center;
 }
 
@@ -87,7 +87,7 @@ section:last-of-type {
 section:first-of-type > div:first-child,
 section:last-of-type > div:first-child {
     display: flex;
-    gap: 2%;
+    gap: 1.5%;
 }
 
 article {
@@ -125,8 +125,8 @@ article p {
 
 article + div {
     display: grid;
-    grid-template-columns: 17vw 17vw;
-    grid-template-rows: 17vw 17vw auto;
+    grid-template-columns: 16vw 16vw;
+    grid-template-rows: 16vw 16vw auto;
     gap: 0.5rem;
 }
 
@@ -156,7 +156,8 @@ article + div p {
 
 article + div ol {
     padding: 0.5rem;
-    margin-left: 2rem;
+    padding-top: 0;
+    margin-left: 1.5rem;
     margin-top: 0;
 }
 
@@ -262,7 +263,7 @@ section:last-of-type > div:nth-child(2) div:nth-child(3) {
 /* Footer */
 footer {
     font-size: calc(0.9 * var(--font_size));
-    padding: 1rem 0;
+    padding: 1rem 0.2rem;
     margin-top: 1rem;
 }
 
@@ -299,10 +300,10 @@ footer {
 
     article {
         margin: 1rem 0;
-    }
+    } 
 
     article + div {
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 12rem 12rem auto;
         gap: 1vw;
     }
@@ -337,6 +338,10 @@ footer {
     nav a {
         font-size: 0.95rem;
     }
+
+    h1 {
+        font-size: 4.2rem;
+    }
 }
 
 @media (900px < width < 1200px) {
@@ -351,8 +356,8 @@ footer {
     }
 
     article + div {
-        grid-template-columns: 12.6rem 12.6rem;
-        grid-template-rows: 12.6rem 12.6rem auto;
+        grid-template-columns: 12rem 12rem;
+        grid-template-rows: 12rem 12rem auto;
         gap: 0.5rem;
     }
 }
