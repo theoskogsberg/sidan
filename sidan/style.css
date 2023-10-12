@@ -13,7 +13,7 @@ body {
 }
 
 body > div {
-    background: url(/Images/background\(1\).jpg);
+    background: url(Images/background\(1\).jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -220,7 +220,7 @@ section:first-of-type > div:nth-child(2) div:nth-child(3) {
 }
 
 section:first-of-type > div:nth-child(2) div:nth-child(4) {
-    background: url(/Images/chas-chandler\(1\).jpg);
+    background: url(Images/chas-chandler\(1\).jpg);
     background-size: cover;
     color: white;
 }
@@ -254,7 +254,7 @@ section:last-of-type > div:nth-child(2) div:nth-child(2) {
 }
 
 section:last-of-type > div:nth-child(2) div:nth-child(3) {
-    background: url(/Images/studio\(1\).jpg);
+    background: url(Images/studio\(1\).jpg);
     background-size: cover;
     background-position: top;
     grid-column: 4 / span 2;
@@ -270,7 +270,7 @@ footer {
 /* Media Queries */
 @media (width <= 500px) {
     body > div {
-        background-image: url(/Images/background-phone\(1\).jpg);
+        background-image: url(Images/background-phone\(1\).jpg);
     }
 
     body {
@@ -364,20 +364,20 @@ footer {
 
 @font-face {
     font-family: "Bungee-Outline";
-    src: url(/fonts/BungeeOutline-Regular.ttf);
+    src: url(fonts/BungeeOutline-Regular.ttf);
 }
 
 @font-face {
     font-family: "Bungee-Shade";
-    src: url(/fonts/BungeeShade-Regular.ttf);
+    src: url(fonts/BungeeShade-Regular.ttf);
 }  
 
 @font-face {
     font-family: "Barlow-Condensed";
-    src: url(/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf);
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf);
 }
 
 @font-face {
     font-family: "Barlow-Semi-Condensed";
-    src: url(/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
 }
